@@ -1,0 +1,16 @@
+{
+    "host": "ftp.wondercurtaining.co.za",
+    "username": "fmsoft21@modestdesigns.co.za",
+    "password": "ENGEY9HM65J!",
+    "remotePath": "/v3/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
