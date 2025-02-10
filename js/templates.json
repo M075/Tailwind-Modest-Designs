@@ -1,9 +1,11 @@
 {
-  "template1": {
-    "title": "Hyperspace - Modern Responsive Web Template",
+  "hyperspace": {
+    "title": "Hyperspace",
     "description": "Hyperspace is a sleek and modern responsive web template designed for creative professionals, agencies, and businesses. Featuring a futuristic purple-toned design, it provides a visually engaging experience with smooth navigation and a well-structured layout.",
     "price": "R 1,499",
-    "link": "https://html5up.net/uploads/demos/dimension/#",
+    "category": "Business",
+    "overviewLink": "/template.html?template=hyperspace",
+    "liveDemo": "https://html5up.net/uploads/demos/hyperspace/#",
     "features": [
         "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
         "Minimalist Sidebar Navigation: A left-side menu with clean typography for seamless user interaction.",
@@ -11,34 +13,48 @@
         "Thumbnail Previews: A carousel-like section showcasing different sections of the website."
     ],
     "images": [
+      "img/templates/hyper/hyperspace.png",
+      "img/templates/hyper/hyper2.png",
+      "img/templates/hyper/hyper3.png",
+      "img/templates/hyper/hyper4.png"
+    ]
+  },
+  "dimension": {
+    "title": "Dimension",
+    "description": "'Dimension' is a visually striking, fully responsive website template designed for showcasing portfolios, personal projects, or small businesses. It features a clean, minimalistic design with a full-screen background image, elegant typography, and subtle animations.",
+    "price": "R1499",
+    "category": "Business",
+    "overviewLink": "/template.html?template=dimension",
+    "liveDemo": "https://html5up.net/uploads/demos/dimension/#",
+    "features": [
+        "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+        "Full-Screen Background: The template uses a high-resolution, full-screen background image to create a bold first impression.",
+        "Interactive Navigation Buttons: Four outlined buttons labeled Intro, Work, About, Contact provide quick access to different sections.",
+        "Seamless Scrolling: A carousel-like page structure showcasing different sections of the website."
+    ],
+    "images": [
       "/img/templates/dimension/dimension.png",
       "/img/templates/dimension/dimension2.png",
       "/img/templates/dimension/dimension5.png",
       "/img/templates/dimension/dimension4.png"
+      
     ]
   },
-  "template2": {
-    "title": "Template Two",
-    "description": "This is the second template description.",
-    "price": "R1499",
-    "link": "https://html5up.net/uploads/demos/dimension/#",
-    "images": [
-      "/img/templates/hyper/hyperspace.png",
-      "/img/templates/hyper/hyper2.png",
-      "/img/templates/hyper/hyper3.png",
-      "/img/templates/hyper/hyper4.png"
-    ]
-  },
-  "template3": {
-    "title": "Template Three",
+  "feare": {
+    "title": "Feare",
     "description": "This is the third template description.",
     "price": "R1499",
-    "link": "https://html5up.net/uploads/demos/dimension/#",
+    "category": "Restaurant",
+    "overviewLink": "/template.html?template=feare",
+    "liveDemo": "https://html5up.net/uploads/demos/dimension/#",
+    "features":[
+
+    ],
     "images": [
-      "/img/templates/feare.png",
-      "/img/templates/feare2.png",
-      "/img/templates/feare3.png",
-      "/img/templates/feare4.png"
+      "img/templates/feare.png",
+      "img/templates/feare2.png",
+      "img/templates/feare3.png",
+      "img/templates/feare4.png"
     ]
   }
 }

@@ -17,3 +17,15 @@
    .then(html => {
      document.getElementById('addon-prices').innerHTML = html;
    });
+
+    fetch('/components/feature-comparison.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('feature-comparison').innerHTML = html;
+      });
+
+      fetch('/components/ecomm-feature-comparison.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('ecomm-feature-comparison').innerHTML = html;
+      });

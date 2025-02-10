@@ -1,0 +1,23 @@
+
+Feature	Basic	Pro (Most Popular)	Premium
+Products	Up to 50 products	Up to 200 products	Unlimited products
+Payment Gateways	1 gateway (e.g., PayPal)	2 gateways (PayPal, Stripe)	Custom gateways (e.g., Apple Pay, Klarna)
+Shipping Setup	Basic flat rate	Advanced (weight-based)	Custom integrations (real-time rates)
+Tax Configuration	Basic tax setup	Advanced tax rules	Custom tax rules
+Inventory Management	Basic	Advanced (low stock alerts)	Premium (automated restocking)
+Discounts & Coupons	Basic discount codes	Advanced (BOGO, % off)	Custom promotions
+SEO Setup	Basic SEO (meta tags)	Advanced SEO (keywords, alt tags)	Premium SEO (content optimization, backlinks)
+Mobile Responsiveness	Yes	Yes	Yes
+Blog Setup	Not included	Basic blog (5 posts)	Advanced blog (unlimited posts, categories)
+Social Media Integration	Basic links	Social sharing buttons	Full social media feeds
+Security	Basic SSL certificate	Advanced security (malware scans)	Premium security (firewall, DDoS protection)
+Support	6 months email support	1 year chat/email support	Lifetime priority support
+Analytics	Basic Google Analytics	Advanced analytics (sales funnels)	Custom dashboards
+Backups	Monthly backups	Weekly backups	Daily backups
+Content Updates	1 hour/month	3 hours/month	5 hours/month
+Hosting	Shared hosting	Cloud hosting	Dedicated hosting
+Domain Setup	Not included	1 free domain for 1 year	1 free domain + SSL for 1 year
+Speed Optimization	Basic	Advanced (caching, CDN)	Premium (server-side optimizations)
+Multi-Currency Support	Not included	Yes	Yes
+Custom Integrations	Not included	Limited (e.g., Mailchimp)	Full (e.g., ERP, CRM)
+Account Manager	Not included	Not included	Dedicated account manager

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/">
+    <base href="/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
@@ -18,7 +18,7 @@
       }
     </style>
     <title>Templates | Modest Designs</title>
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="img/logo.png" />
   </head>
   <body>
     <!--
@@ -112,7 +112,7 @@
           <div
             class="flex gap-x-4 rounded-xl bg-black/27 p-6 ring-1 ring-inset ring-indigo-400"
           >
-          <img class="h-6 w-8 mt-1 invert" src="img/webpage.png" alt="">
+            <img class="h-6 w-8 mt-1 invert" src="img/webpage.png" alt="" />
 
             <div class="text-base leading-7">
               <h3 class="font-semibold text-gray-200">Essentials</h3>
@@ -125,24 +125,34 @@
           <div
             class="flex gap-x-4 rounded-xl bg-black/27 p-6 ring-1 ring-inset ring-indigo-400"
           >
-          <img class="h-6 w-8 mt-1 invert" src="img/web-programming.png" alt="">
-          
+            <img
+              class="h-6 w-8 mt-1 invert"
+              src="img/web-programming.png"
+              alt=""
+            />
+
             <div class="text-base leading-7">
               <h3 class="font-semibold text-gray-200">Standard</h3>
               <p class="mt-2 text-indigo-400">
-                Templates that are a step above the essentials, with a bit more OOMPH! and flexibility.
+                Templates that are a step above the essentials, with a bit more
+                OOMPH! and flexibility.
               </p>
             </div>
           </div>
           <div
             class="flex gap-x-4 rounded-xl bg-black/27 p-6 ring-1 ring-inset ring-indigo-400"
           >
-          <img class="h-6 w-8 mt-1 invert" src="img/graphic-design.png" alt="">
+            <img
+              class="h-6 w-8 mt-1 invert"
+              src="img/graphic-design.png"
+              alt=""
+            />
 
             <div class="text-base leading-7">
               <h3 class="font-semibold text-gray-200">Visionary</h3>
               <p class="mt-2 text-indigo-400">
-                Not for the faint-hearted, these templates are for the 10xers who want to stand out from the crowd.
+                Not for the faint-hearted, these templates are for the 10xers
+                who want to stand out from the crowd.
               </p>
             </div>
           </div>
@@ -150,235 +160,170 @@
       </div>
     </div>
 
-    <div class="bg-white">
+    <div
+      class="relative isolate overflow-hidden bg-gray-100 px-6 py-24 sm:py-32 lg:px-8"
+    >
+      <div
+        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
       <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
-        <div class="flex items-center justify-between px-4 sm:px-6 lg:px-0">
-          <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-            Standard Themes
-          </h2>
-        </div>
-
-        <div class="relative mt-8">
-          <div class="relative -mb-6 w-full overflow-x-auto pb-6">
-            <ul
-              role="list"
-              class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+        <div x-data="{ activeTab: 'Informative' }">
+          <!-- Tab Navigation -->
+          <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-base font-semibold leading-7 text-indigo-600">
+              STEP 01
+            </h2>
+            <p
+              class="mb-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
             >
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/md old.png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/hyperspace.png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/velo.png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/Screenshot (27).png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
+              Select a website type
+            </p>
+            <p
+              class="mx-auto mb-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
+            >
+              Do you want to merely inform your audience about your business or
+              do you want to sell products online?
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-md font-semibold leading-5 ring-1 ring-inset ring-gray-400"
+            >
+              <button
+                @click="activeTab = 'Informative'"
+                :class="activeTab === 'Informative' ? 'bg-indigo-600 text-white' : 'text-gray-500'"
+                class="cursor-pointer rounded-full p-6 transition-colors duration-300"
+              >
+                Informative Website
+              </button>
+              <button
+                @click="activeTab = 'store'"
+                :class="activeTab === 'store' ? 'bg-indigo-600 text-white hover:text-white' : 'text-gray-500'"
+                class="cursor-pointer rounded-full px-5 py-5 hover:text-indigo-600 transition-colors duration-300"
+              >
+                Online Store
+              </button>
+            </div>
+          </div>
 
-              <!-- More products... -->
-            </ul>
+          <!-- Informative Tab -->
+          <div x-show="activeTab === 'Informative'" class="pt-8">
+            <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+              <div
+                class="flex items-center justify-between px-4 sm:px-6 lg:px-0"
+              >
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+                  Standard Themes
+                </h2>
+              </div>
+
+              <!-- Replace the existing template list with this code -->
+<div class="relative mt-8">
+  <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+    <ul
+      x-data="{ templates: [] }"
+      x-init="fetch('js/templates.json')
+        .then(response => response.json())
+        .then(data => templates = Object.values(data))"
+      role="list"
+      class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+    >
+      <template x-for="template in templates" :key="template.title">
+        <li class="inline-flex w-64 flex-col lg:w-auto">
+          <div class="group relative shadow-sm hover:shadow-md rounded-lg">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+              <img
+                :src="template.images[0]"
+                :alt="template.title"
+                class="h-full w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <div class="mt-4">
+              <h3 class="text-center mb-2 text-gray-500" >
+                <span x-text="template.category"></span>
+              </h3>
+              <div class="flex justify-between items-center mx-4 mb-4">
+                  <h3 class="font-semibold text-gray-900">
+                      <a :href="template.overviewLink">
+                          <span class="absolute inset-0"></span>
+                          <span x-text="template.title"></span>
+                      </a>
+                  </h3>
+                  <p class="text-gray-900" x-text="template.price"></p>
+              </div>
+          </div>
+          </div>
+        </li>
+      </template>
+    </ul>
+  </div>
+</div>
+            </div>
+          </div>
+
+          <!-- Store Tab -->
+          <div x-show="activeTab === 'store'" class="bg-white pt-10">
           </div>
         </div>
       </div>
     </div>
-
-    <div class="bg-white">
-      <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
-        <div class="flex items-center justify-between px-4 sm:px-6 lg:px-0">
-          <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-            Standard Themes
-          </h2>
-        </div>
-
-        <div class="relative mt-8">
-          <div class="relative -mb-6 w-full overflow-x-auto pb-6">
-            <ul
-              role="list"
-              class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
-            >
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/md old.png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/hyperspace.png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/velo.png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div
-                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
-                  >
-                    <img
-                      src="img/templates/Screenshot (27).png"
-                      alt="Black machined steel pen with hexagonal grip and small white logo at top."
-                      class="h-full w-full object-cover object-center group-hover:opacity-75"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-
-              <!-- More products... -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="//unpkg.com/alpinejs"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"
+    ></script>
     <script src="js/embeds.js"></script>
-    
   </body>
 </html>

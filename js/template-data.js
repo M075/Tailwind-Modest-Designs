@@ -13,7 +13,7 @@ window.onload = function () {
         return;
     }
 
-    fetch("/js/templates.json")
+    fetch("js/templates.json")
         .then(response => response.json())
         .then(data => {
             const templateData = data[templateKey]; // Get the corresponding template

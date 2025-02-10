@@ -21,7 +21,7 @@
     ".git": {},
     ".htaccess": {
       "type": "-",
-      "size": 272,
+      "size": 30,
       "lmtime": 0,
       "modified": true
     },
@@ -158,9 +158,9 @@
     "v3": {
       ".htaccess": {
         "type": "-",
-        "size": 179,
+        "size": 180,
         "lmtime": 0,
-        "modified": false
+        "modified": true
       },
       "Tailwind Modest Designs.code-workspace": {
         "type": "-",
@@ -183,16 +183,10 @@
         },
         "navbar.html": {
           "type": "-",
-          "size": 5562,
+          "size": 5600,
           "lmtime": 1738774427301.6216,
-          "modified": false
+          "modified": true
         }
-      },
-      "dimension.html": {
-        "type": "-",
-        "size": 16075,
-        "lmtime": 1738785843221.8672,
-        "modified": false
       },
       "img": {
         "amd (1).png": {
@@ -822,16 +816,16 @@
       },
       "index.html": {
         "type": "-",
-        "size": 37129,
-        "lmtime": 1738773228463.4104,
-        "modified": true
+        "size": 38426,
+        "lmtime": 1738916202715,
+        "modified": false
       },
       "js": {
         "embeds.js": {
           "type": "-",
-          "size": 600,
+          "size": 609,
           "lmtime": 1738785315678.833,
-          "modified": false
+          "modified": true
         },
         "mobile-menu.js": {
           "type": "-",
@@ -847,15 +841,15 @@
         },
         "template-data.js": {
           "type": "-",
-          "size": 1612,
+          "size": 1611,
           "lmtime": 1738854056524.7222,
-          "modified": false
+          "modified": true
         },
         "templates.json": {
           "type": "-",
-          "size": 1901,
+          "size": 1889,
           "lmtime": 1738862824961.5552,
-          "modified": false
+          "modified": true
         }
       },
       "landing.html": {
@@ -872,33 +866,25 @@
       },
       "pricing.html": {
         "type": "-",
-        "size": 36911,
+        "size": 37753,
         "lmtime": 1738715411922.1357,
         "modified": true
       },
       "table.csv": {
         "type": "-",
-        "size": 1324,
+        "size": 1332,
         "lmtime": 1738576761636.2134,
         "modified": true
       },
       "template.html": {
         "type": "-",
-        "size": 9570,
-        "lmtime": 1738865814257.5698,
-        "modified": true
-      },
-      "templates": {
-        "dimension.html": {
-          "type": "-",
-          "size": 16075,
-          "lmtime": 1738785843221.8672,
-          "modified": false
-        }
+        "size": 9663,
+        "lmtime": 1738876096978,
+        "modified": false
       },
       "templates.html": {
         "type": "-",
-        "size": 15590,
+        "size": 16023,
         "lmtime": 1738865749944.1367,
         "modified": true
       },
