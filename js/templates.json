@@ -22,7 +22,7 @@
   "dimension": {
     "title": "Dimension",
     "description": "'Dimension' is a visually striking, fully responsive website template designed for showcasing portfolios, personal projects, or small businesses. It features a clean, minimalistic design with a full-screen background image, elegant typography, and subtle animations.",
-    "price": "R1499",
+    "price": "R 1,499",
     "category": "Business",
     "overviewLink": "/template.html?template=dimension",
     "liveDemo": "https://html5up.net/uploads/demos/dimension/#",
@@ -43,8 +43,8 @@
   "feare": {
     "title": "Feare",
     "description": "This is the third template description.",
-    "price": "R1499",
-    "category": "Restaurant",
+    "price": "R 1,499",
+    "category": "Culinary",
     "overviewLink": "/template.html?template=feare",
     "liveDemo": "https://html5up.net/uploads/demos/dimension/#",
     "features":[
@@ -55,6 +55,126 @@
       "img/templates/feare2.png",
       "img/templates/feare3.png",
       "img/templates/feare4.png"
+    ]
+  },
+  "flare": {
+    "title": "Flare",
+    "description": "A landing page and website template that’s specifically designed for digital agencies, small businesses, and startups. With its trendy, modern, and sophisticated style, your website is sure to make a strong and lasting impression on potential clients. Flare is also mobile-ready and high-definition ready, ensuring that your site looks great on any device.",
+    "price": "R 1,499",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=flare",
+    "liveDemo": "https://styleshout.com/templates/preview/Flare_1_0_0/",
+    "features":[
+      "Full-screen hero section with call to action buttons and video modal features",
+      "The about and services section is a great way to introduce your site, products, and services.",
+      "The portfolio section creatively showcases your work with a client list slide carousel, testimonial section and more!",
+      "So if you’re looking to build a stunning page for your startup or agency, Flare is definitely worth checking out!"
+    ],
+    "images": [
+      "img/templates/flare-01.jpg",
+      "img/templates/flare-02.jpg",
+      "img/templates/flare3.png",
+      "img/templates/flare5.png"
+    ]
+  },
+  "Kairos": {
+    "title": "Kairos",
+    "description": "Kairos’s sleek and simple design is ideal for showcasing your app to potential users. This template includes an eye-catching banner, call-to-action buttons, video support, a testimonial slider, and a pricing section, all of which are intended to impress visitors to your website.",
+    "price": "R 1,499",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=kairos",
+    "liveDemo": "https://styleshout.com/templates/preview/Kairos10/",
+    "features":[
+      "Full-screen hero section with call to action buttons and video modal features",
+      "The about and services section is a great way to introduce your site, products, and services.",
+      "The portfolio section creatively showcases your work with a client list slide carousel, testimonial section and more!",
+      "So if you’re looking to build a stunning page for your startup or agency, Flare is definitely worth checking out!"
+    ],
+    "images": [
+      "img/templates/kairos-02.jpg",
+      "img/templates/kairos-01.jpg",
+      "img/templates/kairos3.png",
+      "img/templates/kairos5.png"
+    ]
+  },
+  "infinity": {
+    "title": "Infinity",
+    "description": "Infinity is a clean, modern, and well-crafted responsive template designed for creatives and agencies. The template suits the needs of creative agencies, freelancers, and even small business websites. Infinity is mobile and retina/hi-dpi ready which means your site will look awesome, crisp, and sharp on any screen resolution and device.",
+    "price": "R 1,499",
+    "category": "Culinary",
+    "overviewLink": "/template.html?template=infinity",
+    "liveDemo": "https://styleshout.com/templates/preview/Infinity_2_0_0/",
+    "features":[
+      "Full-screen hero section with call to action buttons and video modal features",
+      "The about and services section is a great way to introduce your site, products, and services.",
+      "The portfolio section creatively showcases your work with a client list slide carousel, testimonial section and more!",
+      "So if you’re looking to build a stunning page for your startup or agency, Flare is definitely worth checking out!"
+    ],
+    "images": [
+      "img/templates/infinity-02.jpg",
+      "img/templates/infinity-01.jpg",
+      "img/templates/flare3.png",
+      "img/templates/flare4.png"
+    ]
+  },
+  "mueller": {
+    "title": "Mueller",
+    "description": "Mueller is a responsive agency website template designed specifically for agencies and small businesses. It provides a comprehensive set of features that make it easy to create a simple and modern professional-looking website that captivates your audiences. This template makes it simple for you to showcase your business, services, and best works, making it an excellent choice for both startups and established agencies.",
+    "price": "R 1,499",
+    "category": "Business",
+    "overviewLink": "/template.html?template=mueller",
+    "liveDemo": "https://styleshout.com/templates/preview/Mueller_1_0_0/",
+    "features": [
+        "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+        "Attractive Graphics: ensuring that your website looks great on all devices.",
+        "Well-structured Sections: Includes sections for introducing your company, emphasizing your services, displaying your portfolio, and much more.",
+        "Universal Usage: Whether you’re an online networking agency, a marketing firm, or a design studio, Mueller has everything you need to create a website that stands out from the rest."
+    ],
+    "images": [
+      "img/templates/mueller-02.jpg",
+      "img/templates/mueller-01.jpg",
+      "img/templates/mueller3.png",
+      "img/templates/mueller4.png"      
+    ]
+  },
+  "maillard": {
+    "title": "Maillard",
+    "description": "Maillard template will make your restaurant or cafe business stand out online. It has a simple, modern and elegant design that is fully responsive, so your website will look amazing on any screen size. Maillard has all the pages you need to showcase your business, such as a homepage, menu page, reservation page and about page.",
+    "price": "R 1,499",
+    "category": "Business",
+    "overviewLink": "/template.html?template=maillard",
+    "liveDemo": "https://styleshout.com/templates/preview/Maillard_1_0_0/",
+    "features": [
+        "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+        "Attractive Graphics: ensuring that your website looks great on all devices.",
+        "Well-structured Sections: Includes sections for introducing your company, emphasizing your services, displaying your portfolio, and much more.",
+        "Universal Usage: Whether you’re an online networking agency, a marketing firm, or a design studio, Mueller has everything you need to create a website that stands out from the rest."
+    ],
+    "images": [
+      "img/templates/maillard-02.jpg",
+      "img/templates/maillard2.png",
+      "img/templates/maillard3.png",
+      "img/templates/maillard4.png"
+    ]
+  },
+  "tyndale": {
+    "title": "Tyndale",
+    "description": "Are you looking for a agency website template suitable for digital studios and agencies? Tyndale is a good place to start. This contemporary one-page template is packed with features that make it simple to create responsive websites that stand out. Indeed, it is so versatile that it can be used for a wide range of purposes, including portfolios, business websites, personal websites, and others.",
+    "price": "R 1,499",
+    "category": "Agency",
+    "overviewLink": "/template.html?template=tyndale",
+    "liveDemo": "https://styleshout.com/templates/preview/Tyndale_1_0_0/",
+    "features": [
+        "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+        "Attractive Graphics: ensuring that your website looks great on all devices.",
+        "Well-structured Sections: Includes sections for introducing your company, emphasizing your services, displaying your portfolio, and much more.",
+        "Universal Usage: Whether you’re an online networking agency, a marketing firm, or a design studio, Mueller has everything you need to create a website that stands out from the rest."
+    ],
+    "images": [
+      "img/templates/tyndale-02.jpg",
+      "img/templates/tyndale2.png",
+      "img/templates/tyndale3.png",
+      "img/templates/tyndale4.png"
     ]
   }
 }

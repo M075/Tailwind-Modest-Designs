@@ -78,19 +78,19 @@
           <div class="flex justify-center">
             
             <div
-              class="grid grid-cols-2  gap-x-1 rounded-full p-1 text-center text-md font-semibold leading-5 ring-1 ring-inset ring-gray-400"
+              class="grid grid-cols-2  gap-x-1 rounded-full p-1 text-center text-md font-semibold leading-5 ring-2 ring-indigo-500"
             >
                 <button
                 @click="activeTab = 'Informative'"
-                :class="activeTab === 'Informative' ? 'bg-indigo-600 text-white' : 'text-gray-500'"
-                class="cursor-pointer rounded-full p-6 transition-colors duration-300"
+                :class="activeTab === 'Informative' ? 'bg-indigo-600 text-white hover:text-white' : 'text-indigo-400'"
+                class="cursor-pointer rounded-full p-5 hover:text-indigo-600 transition-colors duration-300"
               >
                 Informative Website
               </button>
               <button
                 @click="activeTab = 'store'"
-                :class="activeTab === 'store' ? 'bg-indigo-600 text-white hover:text-white' : 'text-gray-500'"
-                class="cursor-pointer rounded-full px-5 py-5 hover:text-indigo-600 transition-colors duration-300"
+                :class="activeTab === 'store' ? 'bg-indigo-600 text-white hover:text-white' : 'text-indigo-400'"
+                class="cursor-pointer rounded-full p-5 hover:text-indigo-600 transition-colors duration-300"
               >
                 Online Store
               </button>
@@ -137,8 +137,8 @@
               </ul>
               <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Get started today</a>
             </div>
-            <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
-              <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">Enterprise</h3>
+            <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-yellow-500 sm:p-10">
+              <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-yellow-500">Enterprise</h3>
               <p class="mt-4 flex items-baseline gap-x-2">
                 <span class="text-5xl font-bold tracking-tight text-white">$49</span>
                 <span class="text-base text-gray-400">/month</span>
@@ -146,48 +146,48 @@
               <p class="mt-6 text-base leading-7 text-gray-300">Dedicated support and infrastructure for your company.</p>
               <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 sm:mt-10">
                 <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                   </svg>
                   Unlimited products
                 </li>
                 <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                   </svg>
                   Unlimited subscribers
                 </li>
                 <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                   </svg>
                   Advanced analytics
                 </li>
                 <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                   </svg>
                   Dedicated support representative
                 </li>
                 <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                   </svg>
                   Marketing automations
                 </li>
                 <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                   </svg>
                   Custom integrations
                 </li>
               </ul>
-              <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Get started today</a>
+              <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md border border-yellow-500 px-3.5 py-2.5 text-center text-sm font-semibold text-yellow-500 shadow-sm hover:text-yellow-600 hover:border-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 sm:mt-10">Get started today</a>
             </div>
             </div>
           </div>
           <!-- store Theme Pricing Table -->
-          <div x-show="activeTab === 'store'" class="bg-white pt-10">
+          <div x-show="activeTab === 'store'" class="pt-8">
             <!-- Content from three_tiers_with_toggle_on_store.html -->
             <!-- <div class="py-24 sm:py-32"> -->
             <!-- <div class="mx-auto max-w-7xl px-6 lg:px-8"> -->
