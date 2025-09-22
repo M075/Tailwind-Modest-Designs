@@ -1,0 +1,164 @@
+{
+  "creative-classes": {
+    "title": "Creative Classes",
+    "description": "Creative Classes template is a clean and modern theme designed for demonstrators, instructors, and content creators. With a focus on readability and user experience, Creative Classes helps you create a professional and engaging website that attracts readers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your website looks great on all devices and ranks well in search engines. Creative Classes includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a hobbyist or a professional instructor, Creative Classes is the perfect choice for sharing your adventures and ideas with the world.",
+    "price": "R 999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=creative-classes",
+    "liveDemo": "https://m075.github.io/demos/creative-classes/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your website looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your website to your social media profiles."
+    ],
+    "images": [
+      "img/templates/classes.png",
+      "img/templates/classes2.png",
+      "img/templates/classes3.png",
+      "img/templates/classes4.png"
+    ]
+  },
+  "dark": {
+    "title": "Dark",
+    "description": "Dark template is a clean and modern theme designed for night shifters, servitors, and content creators. With a focus on simplicity and user experience, Dark helps you create a professional and engaging website that attracts readers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your website looks great on all devices and ranks well in search engines. Dark includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a hobbyist or a servitor, Dark is the perfect choice for sharing your services and ideas with the world.",
+    "price": "R 999",
+    "category": "Art & Design",
+    "overviewLink": "/template.html?template=dark",
+    "liveDemo": "https://m075.github.io/demos/dark-theme/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your website looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your website to your social media profiles."
+    ],
+    "images": [
+      "img/templates/dark.png",
+      "img/templates/dark2.png",
+      "img/templates/dark3.png",
+      "img/templates/dark4.png"
+    ]
+  },
+    "company-theme": {
+    "title": "Finance",
+    "description": "Finance is a dark and classic theme designed for financial services, consulting firms, and other business-related websites. With a clean and professional design, Finance helps you create a strong online presence for your company. The theme is fully responsive and optimized for speed and SEO, ensuring your website looks great on all devices and ranks well in search engines. Finance includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a startup or an established business, Finance is the perfect choice for showcasing your services and attracting new clients.",
+    "price": "R 999",
+    "category": "Business",
+    "overviewLink": "/template.html?template=company-theme",
+    "liveDemo": "https://m075.github.io/demos/company-theme/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your store looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your store to your social media profiles."
+    ],
+    "images": [
+      "img/templates/company.png",
+      "img/templates/company2.png",
+      "img/templates/company3.png",
+      "img/templates/company4.png"
+    ]
+  },
+  "photography-theme": {
+    "title": "Capture",
+    "description": "Capture template is a clean and modern theme designed for photographers, writers, and content creators. With a focus on readability and user experience, Capture helps you create a professional and engaging website that attracts viewers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your photography looks great on all devices and ranks well in search engines. Capture includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a hobbyist or a professional photographyger, Capture is the perfect choice for sharing your art and ideas with the world.",
+    "price": "R 999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=photography-theme",
+    "liveDemo": "https://m075.github.io/demos/photography-theme/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your photography looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your photography to your social media profiles."
+    ],
+    "images": [
+      "img/templates/photography.png",
+      "img/templates/photography2.png",
+      "img/templates/photography3.png",
+      "img/templates/photography4.png"
+    ]
+  },
+  "plant-theme": {
+    "title": "Nature Lover",
+    "description": "Nature Lover theme is a clean and modern theme designed for plant enthusiasts, small business owners, and nurseries. With a focus on readability and user experience, This theme helps you create a professional and engaging website that attracts readers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your template looks great on all devices and ranks well in search engines. The template also includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a hobbyist or a professional Botanist, this template is the perfect choice for sharing your plants and ideas with the world.",
+    "price": "R 999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=plant-theme",
+    "liveDemo": "https://m075.github.io/demos/plant-theme/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your plant-theme looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your plant-theme to your social media profiles."
+    ],
+    "images": [
+      "img/templates/plant.png",
+      "img/templates/plant2.png",
+      "img/templates/plant3.png",
+      "img/templates/plant4.png"
+    ]
+  },
+  "designer": {
+    "title": "Designer",
+    "description": "Designer is a clean and modern theme designed for graphic designers, artists, and content creators. With a focus on readability and user experience, Designer helps you create a professional and engaging website that attracts readers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your designer template looks great on all devices and ranks well in search engines. Designer includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a hobbyist or a professional designer, Designer is the perfect choice for sharing your designs and creations with the world.",
+    "price": "R 999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=designer",
+    "liveDemo": "https://m075.github.io/demos/donavan-brown/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your designer template looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your designer template to your social media profiles."
+    ],
+    "images": [
+      "img/templates/designer.png",
+      "img/templates/designer2.png",
+      "img/templates/designer3.png",
+      "img/templates/designer4.png"
+    ]
+  },
+  
+  "somber": {
+    "title": "Somber",
+    "description": "Somber template is a clean and universal dark theme designed for agencies, businesses, content creators & professionals. With a focus on readability and user experience, Somber helps you create a professional and engaging website that attracts readers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your website looks great on all devices and ranks well in search engines. Somber includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a agency or a professional, Somber is the perfect choice for sharing your services and ideas with the world.",
+    "price": "R 999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=somber",
+    "liveDemo": "https://m075.github.io/demos/somber/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your website looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Social Media Integration: Easily connect your website to your social media profiles."
+    ],
+    "images": [
+      "img/templates/somber.png",
+      "img/templates/somber2.png",
+      "img/templates/somber3.png",
+      "img/templates/somber4.png"
+    ]
+  },
+  "vibrance": {
+    "title": "Vibrance",
+    "description": "Vibrance template is a clean and modern theme designed for colorful vibrant personalities, artists, and content creators. With a focus on color palettes and user experience, Vibrance helps you create a professional and engaging website that attracts readers and keeps them coming back for more. The theme is fully responsive and optimized for speed and SEO, ensuring your website looks great on all devices and ranks well in search engines. Vibrance includes advanced features like custom widgets, social media integration, and a customizable header and footer. Whether you're a hobbyist or an artist, Vibrance is the perfect choice for sharing your designs and ideas with the world.",
+    "price": "R 999",
+    "category": "Art & Design",
+    "overviewLink": "/template.html?template=vibrance",
+    "liveDemo": "https://m075.github.io/demos/vibrance-theme/index.html",
+    "features": [
+        "Fully Responsive Design: Ensures your website looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Color Palette: Carefully selected vibrant color palettes to match your vibrant personality or brand.",
+        "Social Media Integration: Easily connect your website to your social media profiles."
+    ],
+    "images": [
+      "img/templates/vibrance.png",
+      "img/templates/vibrance2.png",
+      "img/templates/vibrance3.png",
+      "img/templates/vibrance4.png"
+    ]
+  }
+}

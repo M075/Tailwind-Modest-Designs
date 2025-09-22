@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <script>
+      if (window.location.hostname === "modestdesigns.co.za") {
+        document.querySelector("base").setAttribute("href", "/v3/");
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Todhri&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <title>Templates | Modest Designs</title>
+    <link rel="icon" href="img/logo.png" />
+  </head>
+  <body class="bg-gray-950 overflow-x-hidden">
+    <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+    <div id="header-placeholder"></div>
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <img
+        src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=1366&h=768&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+        alt=""
+        class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+      />
+      <div id="gradient-background"></div>
+
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            Templates
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300">
+            Browse through our collection of attractive & responsive templates
+            to find the perfect one for your project.
+          </p>
+        </div>
+        <div
+          class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+        >
+          <div
+            class="flex gap-x-4 rounded-xl bg-black/27 p-6 ring-1 ring-inset ring-indigo-400"
+          >
+            <img class="h-6 w-8 mt-1 invert" src="img/webpage.png" alt="" />
+
+            <div class="text-base leading-7">
+              <h3 class="font-semibold text-gray-200">Essentials</h3>
+              <p class="mt-2 text-indigo-400">
+                Templates that have a simple design but get the job done, no
+                whims and fancies.
+              </p>
+            </div>
+          </div>
+          <!-- <div
+            class="flex gap-x-4 rounded-xl bg-black/27 p-6 ring-1 ring-inset ring-indigo-400"
+          >
+            <img
+              class="h-6 w-8 mt-1 invert"
+              src="img/web-programming.png"
+              alt=""
+            />
+
+            <div class="text-base leading-7">
+              <h3 class="font-semibold text-gray-200">Standard</h3>
+              <p class="mt-2 text-indigo-400">
+                Templates that are a step above the essentials, with a bit more
+                OOMPH! and flexibility.
+              </p>
+            </div>
+          </div> -->
+          <div
+            class="flex gap-x-4 rounded-xl bg-black/27 p-6 ring-1 ring-inset ring-indigo-400"
+          >
+            <img
+              class="h-6 w-8 mt-1 invert"
+              src="img/graphic-design.png"
+              alt=""
+            />
+
+            <div class="text-base leading-7">
+              <h3 class="font-semibold text-gray-200">Visionary</h3>
+              <p class="mt-2 text-indigo-400">
+                Not for the faint-hearted, these templates are for the 10xers
+                who want to stand out from the crowd.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative isolate px-6 py-24 sm:py-32 lg:px-8"
+    ></div>
+      <div id="gradient-background"></div>
+
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div x-data="{ activeTab: 'Informative' }">
+          <!-- Tab Navigation -->
+          <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-base font-semibold leading-7 text-indigo-600">
+              THEMES
+            </h2>
+            <p
+              class="mb-2 text-4xl font-bold tracking-tight text-gray-100 sm:text-5xl"
+            >
+              Select a website type
+            </p>
+            <p
+              class="mx-auto mb-6 max-w-2xl text-center text-lg leading-8 text-gray-300"
+            >
+              Do you want to merely inform your audience about your business or
+              do you want to sell products online?
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-md font-semibold leading-5 ring-2 ring-indigo-400"
+            >
+              <button
+                @click="activeTab = 'Informative'"
+                :class="activeTab === 'Informative' ? 'bg-indigo-600 text-white' : 'text-indigo-400'"
+                class="cursor-pointer rounded-full p-5 transition-colors duration-300"
+              >
+                Informative Website
+              </button>
+              <button
+                @click="activeTab = 'store'"
+                :class="activeTab === 'store' ? 'bg-indigo-600 text-white hover:text-white' : 'text-indigo-400'"
+                class="cursor-pointer rounded-full p-5 hover:text-indigo-600 transition-colors duration-300"
+              >
+                Online Store
+              </button>
+            </div>
+          </div>
+
+          <!-- Informative Tab -->
+          <div x-show="activeTab === 'Informative'" class="pt-8">
+
+            <!-- Trending Themes -->
+            <div class="py-16 sm:py-16 lg:mx-auto lg:max-w-7xl lg:px-8">
+              <div class="flex items-center gap-2 px-4 sm:px-6 lg:px-0">
+                <span
+                  class="inline-flex items-center rounded-md bg-yellow-400 px-2 py-1 text-xs font-medium text-yellow-950 ring-1 ring-yellow-600/20 ring-inset"
+                  >Visionary</span
+                >
+                <h2 class="text-2xl font-bold tracking-tight text-gray-100">
+                  Trending Themes
+                </h2>
+                <p class="text-sm text-gray-300">- Popular go-to options</p>
+              </div>
+
+              <div class="relative mt-8">
+                <div id="gradient-background"></div>
+                <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+                  <ul
+                    x-data="{ templates: [] }"
+                    x-init="fetch('js/visionary-info-templates.json')
+        .then(response => response.json())
+        .then(data => templates = Object.values(data))"
+                    role="list"
+                    class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+                  >
+                    <template
+                      x-for="template in templates"
+                      :key="template.title"
+                    >
+                      <li class="inline-flex w-64 flex-col lg:w-auto mb-6">
+                        <div
+                          class="group relative shadow-sm hover:shadow-md rounded-lg border border-yellow-400"
+                        >
+                          <div
+                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
+                          >
+                            <img
+                              :src="'' + template.images[0]"
+                              :alt="template.title"
+                              class="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <div class="mt-4">
+                            <h3 class="text-center text-sm mb-2 text-gray-500">
+                              <span x-text="template.category"></span>
+                            </h3>
+                            <div
+                              class="flex justify-between items-center mx-4 mb-4"
+                            >
+                              <h3 class="font-semibold text-gray-100">
+                                <a :href="template.overviewLink">
+                                  <span class="absolute inset-0"></span>
+                                  <span x-text="template.title"></span>
+                                </a>
+                              </h3>
+                              <p
+                                class="text-gray-100"
+                                x-text="template.price"
+                              ></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- More Themes -->
+            <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
+              <div class="flex items-center gap-2 px-4 sm:px-6 lg:px-0">
+                <span
+                  class="inline-flex items-center rounded-md bg-yellow-400 px-2 py-1 text-xs font-medium text-yellow-950 ring-1 ring-yellow-600/20 ring-inset"
+                  >Visionary</span
+                >
+                <h2 class="text-2xl font-bold tracking-tight text-gray-100">
+                  More Themes
+                </h2>
+                <p class="text-sm text-gray-300"> - Browse other template options</p>
+              </div>
+
+              <div class="relative mt-8">
+                <div id="gradient-background"></div>
+                <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+                  <ul
+                    x-data="{ templates: [] }"
+                    x-init="fetch('js/standard-info-templates.json')
+        .then(response => response.json())
+        .then(data => templates = Object.values(data))"
+                    role="list"
+                    class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+                  >
+                    <template
+                      x-for="template in templates"
+                      :key="template.title"
+                    >
+                      <li class="inline-flex w-64 flex-col lg:w-auto mb-6">
+                        <div
+                          class="group relative shadow-sm hover:shadow-md rounded-lg border border-yellow-400"
+                        >
+                          <div
+                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
+                          >
+                            <img
+                              :src="'' + template.images[0]"
+                              :alt="template.title"
+                              class="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <div class="mt-4">
+                            <h3 class="text-center text-sm mb-2 text-gray-500">
+                              <span x-text="template.category"></span>
+                            </h3>
+                            <div
+                              class="flex justify-between items-center mx-4 mb-4"
+                            >
+                              <h3 class="font-semibold text-gray-100">
+                                <a :href="template.overviewLink">
+                                  <span class="absolute inset-0"></span>
+                                  <span x-text="template.title"></span>
+                                </a>
+                              </h3>
+                              <p
+                                class="text-gray-100"
+                                x-text="template.price"
+                              ></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Essential Themes -->
+            <div class="pt-16 lg:mx-auto lg:max-w-7xl lg:px-8">
+              <div class="flex items-center gap-2 px-4 sm:px-6 lg:px-0">
+                <span
+                  class="inline-flex items-center rounded-md bg-indigo-500 px-2 py-1 text-xs font-medium text-indigo-100 ring-1 ring-indigo-600/20 ring-inset"
+                  >Essentials</span
+                >
+                <h2 class="text-2xl font-bold tracking-tight text-gray-100">
+                  Standard Themes
+                </h2>
+                <p class="text-sm text-gray-300"> - Browse budget template options</p>
+              </div>
+
+              <div class="relative mt-8">
+                <div id="gradient-background"></div>
+                <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+                  <ul
+                    x-data="{ templates: [] }"
+                    x-init="fetch('js/essential-info-templates.json')
+        .then(response => response.json())
+        .then(data => templates = Object.values(data))"
+                    role="list"
+                    class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+                  >
+                    <template
+                      x-for="template in templates"
+                      :key="template.title"
+                    >
+                      <li class="inline-flex w-64 flex-col lg:w-auto mb-6">
+                        <div
+                          class="group relative shadow-sm hover:shadow-md rounded-lg border border-indigo-400"
+                        >
+                          <div
+                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
+                          >
+                            <img
+                              :src="'' + template.images[0]"
+                              :alt="template.title"
+                              class="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <div class="mt-4">
+                            <h3 class="text-center text-sm mb-2 text-gray-500">
+                              <span x-text="template.category"></span>
+                            </h3>
+                            <div
+                              class="flex justify-between items-center mx-4 mb-4"
+                            >
+                              <h3 class="font-semibold text-gray-100">
+                                <a :href="template.overviewLink">
+                                  <span class="absolute inset-0"></span>
+                                  <span x-text="template.title"></span>
+                                </a>
+                              </h3>
+                              <p
+                                class="text-gray-100"
+                                x-text="template.price"
+                              ></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Store Tab -->
+          <div x-show="activeTab === 'store'" class="pt-8">
+         <!-- Trending Themes -->
+         <div class="py-16 sm:py-16 lg:mx-auto lg:max-w-7xl lg:px-8">
+          <div class="flex items-center gap-2 px-4 sm:px-6 lg:px-0">
+            <span
+              class="inline-flex items-center rounded-md bg-yellow-400 px-2 py-1 text-xs font-medium text-yellow-950 ring-1 ring-yellow-600/20 ring-inset"
+              >Visionary</span
+            >
+            <h2 class="text-2xl font-bold tracking-tight text-gray-100">
+              Trending Themes
+            </h2>
+            <p class="text-sm text-gray-300">- Popular go-to options</p>
+          </div>
+
+          <div class="relative mt-8">
+            <div id="gradient-background"></div>
+            <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+              <ul
+                x-data="{ templates: [] }"
+                x-init="fetch('js/visionary-store-templates.json')
+    .then(response => response.json())
+    .then(data => templates = Object.values(data))"
+                role="list"
+                class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+              >
+                <template
+                  x-for="template in templates"
+                  :key="template.title"
+                >
+                  <li class="inline-flex w-64 flex-col lg:w-auto mb-6">
+                    <div
+                      class="group relative shadow-sm hover:shadow-md rounded-lg border border-yellow-400"
+                    >
+                      <div
+                        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
+                      >
+                        <img
+                          :src="'' + template.images[0]"
+                          :alt="template.title"
+                          class="h-full w-full object-cover object-center group-hover:opacity-75"
+                        />
+                      </div>
+                      <div class="mt-4">
+                        <h3 class="text-center text-sm mb-2 text-gray-500">
+                          <span x-text="template.category"></span>
+                        </h3>
+                        <div
+                          class="flex justify-between items-center mx-4 mb-4"
+                        >
+                          <h3 class="font-semibold text-gray-100">
+                            <a :href="template.overviewLink">
+                              <span class="absolute inset-0"></span>
+                              <span x-text="template.title"></span>
+                            </a>
+                          </h3>
+                          <p
+                            class="text-gray-100"
+                            x-text="template.price"
+                          ></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store Tab Essential Themes -->
+            <div class="pt-16 lg:mx-auto lg:max-w-7xl lg:px-8">
+              <div class="flex items-center gap-2 px-4 sm:px-6 lg:px-0">
+                <span
+                  class="inline-flex items-center rounded-md bg-indigo-500 px-2 py-1 text-xs font-medium text-indigo-100 ring-1 ring-indigo-600/20 ring-inset"
+                  >Essentials</span
+                >
+                <h2 class="text-2xl font-bold tracking-tight text-gray-100">
+                  Standard Themes
+                </h2>
+                <p class="text-sm text-gray-300"> - Browse budget template options</p>
+              </div>
+
+              <div class="relative mt-8">
+                <div id="gradient-background"></div>
+                <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+                  <ul
+                    x-data="{ templates: [] }"
+                    x-init="fetch('js/essential-store-templates.json')
+        .then(response => response.json())
+        .then(data => templates = Object.values(data))"
+                    role="list"
+                    class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+                  >
+                    <template
+                      x-for="template in templates"
+                      :key="template.title"
+                    >
+                      <li class="inline-flex w-64 flex-col lg:w-auto mb-6">
+                        <div
+                          class="group relative shadow-sm hover:shadow-md rounded-lg border border-indigo-400"
+                        >
+                          <div
+                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200"
+                          >
+                            <img
+                              :src="template.images[0]"
+                              :alt="template.title"
+                              class="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <div class="mt-4">
+                            <h3 class="text-center text-sm mb-2 text-gray-500">
+                              <span x-text="template.category"></span>
+                            </h3>
+                            <div
+                              class="flex justify-between items-center mx-4 mb-4"
+                            >
+                              <h3 class="font-semibold text-gray-100">
+                                <a :href="template.overviewLink">
+                                  <span class="absolute inset-0"></span>
+                                  <span x-text="template.title"></span>
+                                </a>
+                              </h3>
+                              <p
+                                class="text-gray-100"
+                                x-text="template.price"
+                              ></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+        <!-- Banner Browse Other Services -->
+      </div>
+        <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div class="relative isolate overflow-hidden bg-gray-200/10 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+            <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Looking for something else?</h2>
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500">Browse some other services we offer. Vector Illustrations, Custom Branding & Logo, Video Intros, and more.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-indigo-50 shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-100">Learn more <span aria-hidden="true">→</span></a>
+            </div>
+            <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+              <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+              <defs>
+                <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                  <stop stop-color="#7775D6" />
+                  <stop offset="1" stop-color="#E935C1" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      
+
+        <div class="bg-gray-950 py-24 sm:py-32>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+       <h2 class="text-base font-semibold leading-7 text-indigo-600">
+              PROJECTS
+            </h2>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Extracted from our archives</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-400">Explore our collection of past projects and get insights for your next design.</p>
+    </div>
+    <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      
+      <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+        <img src="/img/MD Intro.gif" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+        <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+
+        <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+          <time datetime="2020-03-16" class="mr-8">Mar 16, 2025</time>
+          <div class="-ml-4 flex items-center gap-x-4">
+            <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-black/20">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="flex gap-x-2.5">
+              <img src="/img/logo.png" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10">
+              Modest Designs
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+          <a href="contact.html">
+            <span class="absolute inset-0"></span>
+            Video Intros: The Ultimate Branding Tool for Your Business
+          </a>
+        </h3>
+      </article>
+
+      <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+        <img src="/img/cravins.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+        <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+
+        <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+          <time datetime="2020-03-16" class="mr-8">Jan 21, 2020</time>
+          <div class="-ml-4 flex items-center gap-x-4">
+            <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-black/20">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="flex gap-x-2.5">
+              <img src="/img/logo.png" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10">
+              Modest Designs
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+          <a href="#">
+            <span class="absolute inset-0"></span>
+            Logo Design: Crafting a Memorable Brand Identity
+          </a>
+        </h3>
+      </article>
+
+       <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+        <img src="/img/MD intro 2.gif" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+        <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+
+        <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+          <time datetime="2020-03-16" class="mr-8">Oct 18, 2023</time>
+          <div class="-ml-4 flex items-center gap-x-4">
+            <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-black/20">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+            <div class="flex gap-x-2.5">
+              <img src="/img/logo.png" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10">
+              Modest Designs
+            </div>
+          </div>
+        </div>
+        <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+          <a href="#">
+            <span class="absolute inset-0"></span>
+            Video Intros: Boost your customer engagement
+          </a>
+        </h3>
+      </article>
+
+       
+      <!-- More posts... -->
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div id="footer-placeholder"></div>
+  
+    <script
+      defer
+      src="js/alpine3.14.8.js"
+    ></script>
+    <script src="js/embeds.js"></script>
+    <script src="js/tailwindcss.js"></script>
+
+  </body>
+</html>

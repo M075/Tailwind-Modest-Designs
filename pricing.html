@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <script>
+      if (window.location.hostname === "modestdesigns.co.za") {
+        document.querySelector("base").setAttribute("href", "/v3/");
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Todhri&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <title>Detailed Pricing | Modest Designs</title>
+  </head>
+  <body class="overflow-x-hidden">
+
+    <!-- Nav -->
+<div id="header-placeholder"></div>
+
+<!-- Hero -->
+<div class="relative isolate overflow-hidden bg-gray-900 px-6 py-16 sm:py-32 lg:px-8">
+  <img src="https://images.unsplash.com/photo-1636112163085-2f0b1951d028?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-2xl text-center">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-indigo-600">
+        Pricing
+      </h2>
+      <p
+        class="mt-2 text-4xl font-bold tracking-tight text-gray-100 sm:text-5xl"
+      >
+        Pricing plans for teams of&nbsp;all&nbsp;sizes
+      </p>
+    </div>
+    <p
+      class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-400"
+    >
+      Choose an affordable plan that’s packed with the best features for
+      engaging your audience, creating customer loyalty, and driving sales.
+    </p>
+  </div>
+</div>
+
+    <!-- Pricing Tables -->
+    <div class="relative isolate px-6 py-16 sm:py-32 lg:px-8">
+      <div id="gradient-background"></div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        
+        <div x-data="{ activeTab: 'Informative' }">
+          <!-- Tab Navigation -->
+          <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-base font-bold leading-7 text-indigo-600">
+              FIRST STEP
+            </h2>
+            <p
+              class="mb-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+            >
+                Select a website type
+            </p>
+            <p
+            class="mx-auto mb-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
+          >
+            Do you want to merely inform your audience about your business or do you want to sell products online?
+          </p>
+          </div>
+          <div class="flex justify-center">
+            
+            <div
+              class="grid grid-cols-2  gap-x-1 rounded-full p-1 text-center text-md font-semibold leading-5 ring-2 ring-indigo-400"
+            >
+                <button
+                @click="activeTab = 'Informative'"
+                :class="activeTab === 'Informative' ? 'bg-indigo-600 text-white hover:text-white' : 'text-indigo-400'"
+                class="cursor-pointer rounded-full p-5 hover:text-indigo-600 transition-colors duration-300"
+              >
+                Informative Website
+              </button>
+              <button
+                @click="activeTab = 'store'"
+                :class="activeTab === 'store' ? 'bg-indigo-600 text-white hover:text-white' : 'text-indigo-400'"
+                class="cursor-pointer rounded-full p-5 hover:text-indigo-600 transition-colors duration-300"
+              >
+                Online Store
+              </button>
+            </div>
+          </div>
+
+          <!-- Informative Pricing Table -->
+          <div x-show="activeTab === 'Informative'" class="pt-8">
+            <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+
+            <!-- Essential Plan -->
+            <div class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
+              <h3 id="tier-hobby" class="text-base font-semibold leading-7 text-indigo-600">Essentials</h3>
+              <p class="mt-4 flex items-baseline gap-x-2">
+                <span class="text-5xl font-bold tracking-tight text-gray-900">R99</span>
+                <span class="text-base text-gray-500">/month</span>
+              </p>
+              <p class="mt-6 text-base leading-7 text-gray-600">The perfect plan if you&#039;re just getting started with your wesbite.</p>
+              <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>5 Pages</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Basic SEO</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Basic Contact Form</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Basic SSL</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>1 Year Email Support</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Shared Hosting</li>
+              </ul>
+              <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Get started today</a>
+            </div>
+            <!-- Informative Visionary Card -->
+            <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl sm:p-10">
+              <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-yellow-500">Visionary</h3>
+              <p class="mt-4 flex items-baseline gap-x-2">
+                <span class="text-5xl font-bold tracking-tight text-white">R499</span>
+                <span class="text-base text-gray-400">/month</span>
+              </p>
+              <p class="mt-6 text-base leading-7 text-gray-300">Dedicated support and infrastructure for your company.</p>
+              <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 sm:mt-10">
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Unlimited Pages</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Bespoke Design</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Advanced SEO</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Custom form integrations</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Blog Integration</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Premium Security Features</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Lifetime Priority Support</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>5hr/month Updates</li>
+                <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Dedicated Server Hosting</li>
+              </ul>
+              <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md border border-yellow-500 px-3.5 py-2.5 text-center text-sm font-semibold text-yellow-500 shadow-sm hover:text-yellow-600 hover:border-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 sm:mt-10">Get started today</a>
+            </div>
+            </div>
+          </div>
+          <!-- store Theme Pricing Table -->
+          <div x-show="activeTab === 'store'" class="pt-8">
+            <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+              <!-- Essentials Plan -->
+              <div class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
+                <h3 id="tier-essentials" class="text-base font-semibold leading-7 text-indigo-600">Essentials</h3>
+                <p class="mt-4 flex items-baseline gap-x-2">
+                  <span class="text-5xl font-bold tracking-tight text-gray-900">R299</span>
+                  <span class="text-base text-gray-500">/month</span>
+                </p>
+                <p class="mt-6 text-base leading-7 text-gray-600">All the basics for a small online store.</p>
+                <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Up to 20 products</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>1 Payment Gateway</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Flat-rate Shipping</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Basic SEO</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Social Media Links</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Basic SSL</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>1 Year Email Support</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Basic Analytics</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>1hr/month updates</li>
+                </ul>
+                <a href="#" aria-describedby="tier-essentials" class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Get started today</a>
+              </div>
+              <!-- Visionary Plan -->
+              <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl sm:p-10">
+                <h3 id="tier-visionary" class="text-base font-semibold leading-7 text-yellow-500">Visionary</h3>
+                <p class="mt-4 flex items-baseline gap-x-2">
+                  <span class="text-5xl font-bold tracking-tight text-white">R999</span>
+                  <span class="text-base text-gray-400">/month</span>
+                </p>
+                <p class="mt-6 text-base leading-7 text-gray-300">Advanced features and support for growing businesses.</p>
+                <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 sm:mt-10">
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Unlimited products</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Flexible Payment Gateways</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Custom Shipping Rates</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Custom Tax Rules</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Automated Restocking</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Custom Promotions</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Custom Dashboards</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Premium SEO</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Full Social Media Feeds</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Premium Security</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>Lifetime Priority Support</li>
+                  <li class="flex gap-x-3"><svg class="h-6 w-5 flex-none text-yellow-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg>5hr/month Updates</li>
+                </ul>
+                <a href="#" aria-describedby="tier-visionary" class="mt-8 block rounded-md border border-yellow-500 px-3.5 py-2.5 text-center text-sm font-semibold text-yellow-500 shadow-sm hover:text-yellow-600 hover:border-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 sm:mt-10">Get started today</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+ <!-- Accordion Section -->
+ <div class="relative isolate mb-16 bg-white px-6 sm:mt-10 lg:px-8">
+  <div class="mx-auto mb-6 max-w-2xl text-center lg:max-w-4xl">
+    <h2 class="text-base font-bold leading-7 text-indigo-600">
+      THE FINER DETAILS
+    </h2>
+    <p
+      class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+    >
+      Compare features between plans.
+    </p>
+  </div>
+  </div>
+    <div class="max-w-5xl mx-auto my-14">
+      <div x-data="{ activeAccordion: 1 }">
+          <!-- Accordion Item 1 -->
+          <div class="mb-3">
+              <button 
+                  @click="activeAccordion = activeAccordion === 1 ? null : 1"
+                  class="flex justify-between w-full px-4 py-3 rounded-lg border-b border-gray-300 hover:bg-gray-50"
+              >
+                  <span class="font-medium">
+                    <span class="inline-block bg-indigo-100 text-indigo-700 mr-1 text-xs px-2 py-1 rounded-full font-semibold">
+                  Features
+                </span> 
+                    Informative Websites</span>
+                  <svg 
+                      class="w-5 h-5 transition-transform duration-200"
+                      :class="{ 'rotate-180': activeAccordion === 1 }"
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                  >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+              </button>
+              <div 
+        x-show="activeAccordion === 1"
+        x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="opacity-0 transform -translate-y-2"
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        class="p-4 mt-2 bg-white rounded-lg overflow-x-auto" 
+    >
+    <table id="informative-features" class="min-w-full divide-y divide-gray-200">
+    </table>
+    </div>
+          </div>
+    
+          <!-- Accordion Item 2 -->
+          <div class="mb-3">
+            <button 
+                @click="activeAccordion = activeAccordion === 2 ? null : 2"
+                class="flex justify-between w-full px-4 py-3 rounded-lg border-b border-gray-300 hover:bg-gray-50"
+            >
+                <span class="font-medium">
+                  <span class="inline-block bg-yellow-100 text-yellow-700 mr-1 text-xs px-2 py-1 rounded-full font-semibold">
+                  Features
+                </span> 
+                  Online Store</span>
+                <svg 
+                    class="w-5 h-5 transition-transform duration-200"
+                    :class="{ 'rotate-180': activeAccordion === 2 }"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+            <div 
+      x-show="activeAccordion === 2"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0 transform -translate-y-2"
+      x-transition:enter-end="opacity-100 transform translate-y-0"
+      class="p-4 mt-2 bg-white rounded-lg overflow-x-auto" 
+  >
+  <table id="ecomm-feature-comparison" class="min-w-full divide-y divide-gray-200">
+  </table>
+  </div>
+        </div>
+
+         <!-- Accordion Item 2 -->
+         <div class="mb-3">
+          <button 
+              @click="activeAccordion = activeAccordion === 3 ? null : 3"
+              class="flex justify-between w-full px-4 py-3 rounded-lg border-b border-gray-300 hover:bg-gray-50"
+          >
+              <p class="font-medium">
+                <span class="inline-block bg-red-100 text-red-700 mr-1 text-xs px-2 py-1 rounded-full font-semibold">
+                  Pricing
+                </span> Additional Features</p>
+              <svg 
+                  class="w-5 h-5 transition-transform duration-200"
+                  :class="{ 'rotate-180': activeAccordion === 3 }"
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+              >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+          </button>
+          <div 
+    x-show="activeAccordion === 3"
+    x-transition:enter="transition ease-out duration-500"
+    x-transition:enter-start="opacity-0 transform -translate-y-2"
+    x-transition:enter-end="opacity-100 transform translate-y-0"
+    class=" mt-2 bg-white rounded-lg overflow-x-auto" 
+>
+  <div id="addon-prices"></div>
+
+</table>
+</div>
+      </div>
+      </div>
+    </div>
+    <!-- Addon Pricing  -->
+
+    <!-- footer -->
+<div id="footer-placeholder"></div>
+
+
+<script src="js/tailwindcss.js"></script>
+<script
+      defer
+      src="js/alpine3.14.8.js"
+    ></script>
+    <script src="js/embeds.js"></script>
+  </body>
+</html>
