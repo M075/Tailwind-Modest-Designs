@@ -1,0 +1,82 @@
+{
+    "hyperspace": {
+    "title": "Hyperspace",
+    "description": "Hyperspace is a sleek and modern responsive web template designed for creative professionals, agencies, and businesses. Featuring a futuristic purple-toned design, it provides a visually engaging experience with smooth navigation and a well-structured layout.",
+    "price": "R 1,499",
+    "category": "Business",
+    "overviewLink": "/template.html?template=hyperspace",
+    "liveDemo": "https://html5up.net/uploads/demos/hyperspace/#",
+    "features": [
+        "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+        "Minimalist Sidebar Navigation: A left-side menu with clean typography for seamless user interaction.",
+        "Hero Section: A bold introductory section with a prominent heading, subheading, and a call-to-action button.",
+        "Thumbnail Previews: A carousel-like section showcasing different sections of the website."
+    ],
+    "images": [
+      "img/templates/hyper/hyperspace.png",
+      "img/templates/hyper/hyper2.png",
+      "img/templates/hyper/hyper3.png",
+      "img/templates/hyper/hyper4.png"
+    ]
+  },
+  "dimension": {
+    "title": "Dimension",
+    "description": "'Dimension' is a visually striking, fully responsive website template designed for showcasing portfolios, personal projects, or small businesses. It features a clean, minimalistic design with a full-screen background image, elegant typography, and subtle animations.",
+    "price": "R 1,499",
+    "category": "Portfolio",
+    "overviewLink": "/template.html?template=dimension",
+    "liveDemo": "https://html5up.net/uploads/demos/dimension/#",
+    "features": [
+        "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+        "Full-Screen Background: The template uses a high-resolution, full-screen background image to create a bold first impression.",
+        "Interactive Navigation Buttons: Four outlined buttons labeled Intro, Work, About, Contact provide quick access to different sections.",
+        "Seamless Scrolling: A carousel-like page structure showcasing different sections of the website."
+    ],
+    "images": [
+      "/img/templates/dimension/dimension.png",
+      "/img/templates/dimension/dimension2.png",
+      "/img/templates/dimension/dimension5.png",
+      "/img/templates/dimension/dimension4.png"
+      
+    ]
+  },
+  "feare": {
+    "title": "Feare",
+    "description": "This is the third template description.",
+    "price": "R 1,499",
+    "category": "Culinary",
+    "overviewLink": "/template.html?template=feare",
+    "liveDemo": "https://html5up.net/uploads/demos/dimension/#",
+    "features":[
+
+    ],
+    "images": [
+      "img/templates/feare.png",
+      "img/templates/feare2.png",
+      "img/templates/feare3.png",
+      "img/templates/feare4.png"
+    ]
+  },
+  "furni": {
+    "title": "Furni",
+    "description": "The business website template welcomes visitors with a comfy hero section with a beautiful color scheme. The theme’s got many UI components on the page, such as a top navigation bar, call-to-action button, on-hover effect, price cards, testimonial carousel, blog section, newsletter subscription form UI, footer navigation, contact form UI, product cards for online store and many more. All the components are 100% responsive and responds neatly on any device regardless of the screen size.",
+    "price": "R 1,499",
+    "category": "Business",
+    "overviewLink": "/template.html?template=furni",
+    "liveDemo": "https://themewagon.github.io/furni/",
+    "features":[
+      "Fully Responsive: Optimized for all devices, from desktops to mobile phones.",
+      "SEO Ready: The multipurpose template is SEO optimized and can get you higher ranking in search engine results.",
+      "Cross-browser Compatibility: The theme is compatible with all the major browsers like Chrome, Firefox, Safari, Opera, and Edge.",
+      "Fast Page Loading: Quicker page loading time also reduces the wait time for the visitors, to avail better user engagement on the page."
+    ],
+    "images": [
+      "img/templates/furni.png",
+      "img/templates/furni2.png",
+      "img/templates/furni3.png",
+      "img/templates/furni4.png"
+    ]
+  }
+  
+  
+}

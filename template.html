@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Details | Modest Designs</title>
+    <meta name="description" content="View template details, features, and specifications. Discover modern web templates by Modest Designs." />
+    <meta name="keywords" content="template, web template, features, specifications, modest designs" />
+    <meta property="og:title" content="Template Details | Modest Designs" />
+    <meta property="og:description" content="View template details, features, and specifications. Discover modern web templates by Modest Designs." />
+    <meta property="og:image" content="https://modestdesigns.co.za/img/logo.png" />
+    <meta property="og:url" content="https://modestdesigns.co.za/template.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Template Details | Modest Designs" />
+    <meta name="twitter:description" content="View template details, features, and specifications. Discover modern web templates by Modest Designs." />
+    <meta name="twitter:image" content="https://modestdesigns.co.za/img/logo.png" />
+    <!-- Favicon: used in browser tabs and shortcuts -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png">
+  <link rel="shortcut icon" href="/img/logo.png">
+  <link rel="apple-touch-icon" href="/img/logo.png">
+  <meta name="theme-color" content="#111827">
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,27 +32,11 @@
         font-family: "Poppins", sans-serif;
       }
     </style>
-    <title id="pageTitle"></title>
     <link rel="icon" href="img/logo.png" />
   </head>
-  <body>
+  <body x-data="templatePage()" x-init="init()">
     <div id="header-placeholder"></div>
 
-    <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
     <div class="bg-white">
       <div
         class="mx-auto mt-4 max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
@@ -45,38 +44,14 @@
         <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
           <!-- Image gallery -->
           <div class="flex flex-col-reverse">
-            <!-- Image selector -->
-            <!-- Parent container with x-data -->
-            <div
-              x-data="{ 
-              activeImage: '', 
-              images: [],
-              fetchImages() {
-                  fetch('js/templates.json')
-                      .then(response => response.json())
-                      .then(data => {
-                            const urlParams = new URLSearchParams(window.location.search);
-                            const templateId = urlParams.get('template');
-                            this.images = data[templateId].images;
-                          this.activeImage = this.images[0];
-                      });
-              }
-          }"
-              x-init="fetchImages()"
-              class="text-center"
-            >
+            <div class="text-center">
               <!-- Main image preview -->
               <div class="aspect-h-1 aspect-w-1 w-full">
-                <div
-                  x-show="activeImage"
-                  x-transition:enter="transition ease-out duration-300"
-                  x-transition:enter-start="opacity-0"
-                  x-transition:enter-end="opacity-100"
-                >
+                <div x-show="activeImage" x-transition>
                   <img
                     :src="activeImage"
                     class="h-full w-full object-cover object-center sm:rounded-lg"
-                    alt="Template preview"
+                    :alt="template.title || 'Template preview'"
                   />
                 </div>
               </div>
@@ -87,7 +62,10 @@
                   aria-orientation="horizontal"
                   role="tablist"
                 >
-                  <template x-for="(image, index) in images" :key="index">
+                  <template
+                    x-for="(image, index) in template.images || []"
+                    :key="index"
+                  >
                     <button
                       @click="activeImage = image"
                       class="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
@@ -104,8 +82,7 @@
                         class="pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2"
                         :class="activeImage === image ? 'ring-indigo-500' : 'ring-transparent'"
                         aria-hidden="true"
-                      >
-                      </span>
+                      ></span>
                     </button>
                   </template>
                 </div>
@@ -115,62 +92,91 @@
 
           <!-- Product info -->
           <div class="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-            <h1
-              id="title"
-              class="text-3xl font-bold tracking-tight text-gray-900"
-            ></h1>
-
+            <div class="flex items-center justify-start mx-auto gap-2">
+              <h1
+                class="text-3xl font-bold tracking-tight text-gray-900"
+                x-text="template.title"
+              ></h1>
+              <div x-show="template.category">
+                <span
+                  class="inline-block bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full font-semibold"
+                  x-text="template.category"
+                ></span>
+              </div>
+            </div>
             <div class="mt-3">
               <h2 class="sr-only">Product information</h2>
-
-              <p id="price" class="text-3xl font-semibold tracking-tight text-indigo-500"></p>
+              <p
+                class="text-3xl font-semibold tracking-tight text-indigo-600"
+                x-text="template.price"
+              ></p>
             </div>
-
             <div class="mt-6">
               <h3 class="sr-only">Description</h3>
-
               <div class="space-y-6 text-base text-gray-700">
-                <p id="template-description"></p>
+                <p x-text="template.description"></p>
               </div>
             </div>
 
-            <form class="mt-6">
+            <!-- Add this above the buttons, inside the product info panel -->
+
+            <div
+              class="my-4 flex flex-wrap gap-2"
+              x-show="Array.isArray(template.features) && template.features.length"
+            >
+              <template
+                x-for="(feature, i) in (Array.isArray(template.features) ? template.features.slice(0,3) : [])"
+                :key="feature"
+              >
+                <span
+                  class="inline-block text-xs px-2 py-1 rounded"
+                  :class=" [
+        i === 0 ? ' bg-pink-100 text-pink-700' :
+        i === 1 ? 'bg-green-100 text-green-700' :
+        'bg-yellow-100 text-yellow-700'
+      ]"
+                  x-text="feature.split(':')[0]"
+                ></span>
+              </template>
+            </div>
+
+            <form class="mt-6" @submit.prevent>
               <div class="mt-10 flex">
                 <button
-                  type="submit"
-                  class="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                  type="button"
+                  @click="buyNow()"
+                  class="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
                   Buy now
                 </button>
-
-                <div
-                  x-data="{ link: '' }"
-                  x-init="fetch('js/templates.json')
-                          .then(response => response.json())
-                          .then(data => {
-                              const urlParams = new URLSearchParams(window.location.search);
-                              const templateId = urlParams.get('template');
-                              link = data[templateId].liveDemo;
-                          });">
-                  <!-- ...existing code... -->
-                  <button
-                    type="submit"
-                  class="flex max-w-xs flex-1 items-center justify-center rounded-md 
-                  border border-indigo-600 bg-white ml-2 px-8 py-3 text-base font-medium text-indigo-600 
-                  hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-
-                  >
-                    <a x-bind:href="link">Live Preview</a>
-                  </button>
-                </div>
+                <button
+                  type="button"
+                  class="flex max-w-xs flex-1 items-center justify-center rounded-md border border-indigo-600 bg-white ml-2 px-8 py-3 text-base font-medium text-indigo-600 hover:text-indigo-800 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                  x-show="template.liveDemo"
+                  @click="window.open(template.liveDemo, '_blank')"
+                >
+                  Live Preview
+                </button>
               </div>
             </form>
+            <div class="mt-4 text-sm text-gray-500">
+              <span x-show="template.support"
+                >Support: <span x-text="template.support"></span
+              ></span>
+              <span x-show="template.updates" class="block"
+                >Updates: <span x-text="template.updates"></span
+              ></span>
+              <span class="block mt-2"
+                >Need help?
+                <a href="/contact.html" class="text-indigo-600 hover:underline"
+                  >Contact us</a
+                ></span
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div
-        class="relative mx-auto mt-8 max-w-7xl px-4 sm:px-6 lg:px-8"
-      >
+      <div class="relative mx-auto mt-8 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
           <h2 class="text-base font-semibold leading-7 text-indigo-600">
             Features
@@ -181,54 +187,235 @@
             Template Specifications
           </h2>
           <p class="mt-4 text-gray-500">
-            Here are some of the main features that stand-out from this template.
+            Here are some of the main features that stand-out from this
+            template.
           </p>
         </div>
-
         <dl
           class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:max-w-none lg:grid-cols-2 lg:gap-x-8"
         >
-            <div class="lg:col-span-1">
+          <div class="lg:col-span-1">
             <div class="text-center md:text-left border-t border-gray-200 pt-4">
-              <dt id="title" class="font-bold text-xl text-gray-900"></dt>
-              <dd id="template-description" class="mt-4 text-md text-gray-500">
-              </dd>
+              <dt
+                class="font-bold text-xl text-gray-900"
+                x-text="template.title"
+              ></dt>
+              <dd
+                class="mt-4 text-md text-gray-500"
+                x-text="template.description"
+              ></dd>
             </div>
-            </div>
-            
-            <!-- <div class="lg:col-span-1"> -->
-              <div class="border-t border-gray-200 pt-4" 
-              x-data="{ 
-                  features: [],
-                  async loadFeatures() {
-                      const templateKey = new URLSearchParams(window.location.search).get('template');
-                      const response = await fetch('js/templates.json');
-                      const data = await response.json();
-                      this.features = data[templateKey]?.features || [];
-                  }
-              }" 
-              x-init="loadFeatures()">
-             <dt class="text-center md:text-left font-bold text-xl text-gray-900">Features</dt>
-             <ul class="mt-4 space-y-2">
-                 <template x-for="feature in features" :key="feature">
-                     <li class="text-gray-600 text-md">
-                      <span x-html="feature.split(':')[0] ? `<strong class='font-medium text-gray-900'>${feature.split(':')[0]}:</strong> ${feature.split(':')[1]}` : feature"></span>
-                     </li>
-                 </template>
-             </ul>
-         </div>
-                      
-          
+          </div>
+          <div class="border-t border-gray-200 pt-4">
+            <dt
+              class="text-center md:text-left font-bold text-xl text-gray-900"
+            >
+              Features
+            </dt>
+            <ul class="mt-4 space-y-2">
+              <template
+                x-for="feature in template.features || []"
+                :key="feature"
+              >
+                <li class="text-gray-600 text-md">
+                  <span
+                    x-html="feature.split(':')[0] ? `<strong class='font-medium text-gray-900'>${feature.split(':')[0]}:</strong> ${feature.split(':')[1]}` : feature"
+                  ></span>
+                </li>
+              </template>
+            </ul>
+          </div>
         </dl>
+      </div>
+    </div>
+
+    <!-- Similar Templates Section (using templates.html card layout) -->
+    <div
+      class="bg-gray-50 py-20 mt-20"
+      x-data="similarThemes()"
+      x-init="init()"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+         <div class="flex items-center gap-2 mb-10 px-4 sm:px-6 lg:px-0">
+                <span
+                  class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-yellow-600/20 ring-inset"
+                  >Visionary</span
+                >
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+                  Similar Templates
+                </h2>
+                <p class="text-sm text-gray-400">- Some more templates to choose from</p>
+              </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <template x-for="theme in similar" :key="theme.title">
+            <div
+              class="inline-flex w-full flex-col mb-6 group relative shadow-sm hover:shadow-md rounded-lg border border-indigo-400 bg-white"
+            >
+              <div
+                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-md bg-gray-200"
+              >
+                <img
+                  :src="theme.images && theme.images[0] ? theme.images[0] : 'img/webpage.png'"
+                  :alt="theme.title"
+                  class="h-full w-full object-cover object-center group-hover:opacity-75"
+                />
+              </div>
+              <div class="mt-4 px-4 pb-4">
+                <h3 class="text-center text-sm mb-2 text-gray-500">
+                  <span x-text="theme.category"></span>
+                </h3>
+                <div class="flex justify-between items-center mx-2 mb-4">
+                  <h3 class="font-semibold text-gray-900">
+                    <a :href="theme.overviewLink || '#'">
+                      <span class="absolute inset-0"></span>
+                      <span x-text="theme.title"></span>
+                    </a>
+                  </h3>
+                  <p class="text-gray-900" x-text="theme.price"></p>
+                </div>
+              </div>
+            </div>
+          </template>
+          <template x-if="similar.length === 0">
+            <div class="col-span-full text-center text-gray-500">
+              <p>No similar themes found.</p>
+              <p class="text-sm mt-2">
+                Current category: <span x-text="currentCategory"></span>
+              </p>
+            </div>
+          </template>
+        </div>
       </div>
     </div>
 
     <div id="footer-placeholder"></div>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <script src="js/tailwindcss.js"></script>
+    <script defer src="js/alpine3.14.8.js"></script>
     <script src="js/embeds.js"></script>
-    <script src="js/templates.json"></script>
-    <script src="js/template-data.js"></script>
-    
+    <script>
+      // Alpine.js root component for the template page
+      function templatePage() {
+        return {
+          template: {},
+          activeImage: "",
+            buyNow() {
+              try {
+                // Use digits-only phone number (no + or spaces) as required by WhatsApp URL schema
+                const rawPhone = '+27645412539'; // replace with your WhatsApp number if needed
+                const phoneDigits = rawPhone.replace(/\D/g, '');
+                const title = this.template && this.template.title ? this.template.title : document.title;
+                const pageUrl = "https://modestdesigns.co.za";
+                const message = `Hi! I'm interested in the template: ${title}\n\n${pageUrl}`;
+                const encoded = encodeURIComponent(message);
+                // Use api.whatsapp.com/send which accepts phone and text query params
+                const waUrl = `https://api.whatsapp.com/send?phone=${phoneDigits}&text=${encoded}`;
+                // open in a new tab/window
+                window.open(waUrl, '_blank');
+                console.log('Opening WhatsApp URL:', waUrl);
+              } catch (e) {
+                console.error('Error opening WhatsApp', e);
+              }
+            },
+          async init() {
+            const templateKey = new URLSearchParams(window.location.search).get(
+              "template"
+            );
+            const files = [
+              "js/visionary-info-templates.json",
+              "js/visionary-store-templates.json",
+              "js/essential-store-templates.json",
+              "js/essential-info-templates.json",
+              "js/standard-info-templates.json",
+            ];
+            let found = null;
+            for (const file of files) {
+              try {
+                const response = await fetch(file);
+                if (!response.ok) continue;
+                const data = await response.json();
+                if (data[templateKey]) {
+                  found = data[templateKey];
+                  break;
+                }
+              } catch (e) {
+                continue;
+              }
+            }
+            if (found) {
+              this.template = found;
+              if (found.images && found.images.length > 0) {
+                this.activeImage = found.images[0];
+              }
+              // Set meta and title
+              document.title = found.title || "";
+              document
+                .querySelector("meta[name=description]")
+                .setAttribute("content", found.description || "");
+            }
+          },
+        };
+      }
+
+      // Enhanced similar themes component
+      function similarThemes() {
+        return {
+          similar: [],
+          sourceFile: "",
+          async init() {
+            const templateKey = new URLSearchParams(window.location.search).get(
+              "template"
+            );
+            const files = [
+              "js/visionary-info-templates.json",
+              "js/visionary-store-templates.json",
+              "js/essential-store-templates.json",
+              "js/essential-info-templates.json",
+              "js/standard-info-templates.json",
+            ];
+            let currentTemplate = null;
+            let currentFileData = {};
+            let foundFile = "";
+
+            // Find the current template and its source file
+            for (const file of files) {
+              try {
+                const response = await fetch(file);
+                if (!response.ok) continue;
+                const data = await response.json();
+                if (data[templateKey]) {
+                  currentTemplate = data[templateKey];
+                  currentFileData = data;
+                  foundFile = file;
+                  break;
+                }
+              } catch (e) {
+                console.error("Error loading", file, e);
+                continue;
+              }
+            }
+
+            this.sourceFile = foundFile;
+
+            if (currentTemplate && currentFileData) {
+              // Show up to 4 other templates from the same file, excluding the current template
+              this.similar = Object.entries(currentFileData)
+                .filter(([key, template]) => key !== templateKey)
+                .map(([key, template]) => ({
+                  ...template,
+                  key: key,
+                  overviewLink: `template.html?template=${key}`,
+                }))
+                // Shuffle the array and pick 4 random templates from up to 8
+                .slice(0, 8)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 4);
+            }
+          },
+        };
+      }
+    </script>
   </body>
 </html>

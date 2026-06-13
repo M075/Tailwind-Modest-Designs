@@ -1,0 +1,192 @@
+{
+    "botiga": {
+    "title": "Botiga",
+    "description": "Botiga is a sleek, modern, and highly customizable ecommerce WordPress theme designed to help you create stunning online stores with ease. Whether you're running a small boutique or a large e-commerce business, Botiga offers a clean and responsive design that ensures your store looks great on all devices. Botiga is a sleek, modern, and highly customizable ecommerce WordPress theme designed to help you create stunning online stores with ease. Whether you're running a small boutique or a large e-commerce business, Botiga offers a clean and responsive design that ensures your store looks great on all devices. The theme includes advanced ecommerce features like quick view, wishlist, product filters, and AJAX search, enhancing the shopping experience for your customers. Botiga is also optimized for speed and SEO, ensuring your store loads quickly and ranks well in search engines. With multiple pre-built demos and seamless integration with popular plugins, Botiga is the perfect choice for anyone looking to build a professional and high-performing online store.",
+    "price": "R 2,999",
+    "category": "Beauty",
+    "overviewLink": "/template.html?template=botiga",
+    "liveDemo": "https://demo.athemes.com/themes/?theme=Botiga#",
+    "features": [
+        "Fully Responsive Design: Ensures your store looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "SEO-Friendly: Built with clean code and optimized structure to help your store rank higher in search engines.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Product Gallery Options: Supports zoom, lightbox, and slider features for product images.",
+        "Social Media Integration: Easily connect your store to your social media profiles.",
+        "Product Badges: Highlight sale items, new arrivals, or featured products with customizable badges.",
+        "Custom Widgets: Adds functionality and style to your store with customizable widgets.",
+        "Regular Updates: Stay up-to-date with the latest features and security enhancements."
+    ],
+    "images": [
+      "img/templates/botiga1.png",
+      "img/templates/botiga2.png",
+      "img/templates/botiga3.png",
+      "img/templates/botiga4.png"
+    ]
+  },
+  "kiosko": {
+    "title": "Kiosko",
+    "description": "Kiosko is a free official ecommerce theme, designed to provide a seamless integration with the ecommerce plugins. It offers a clean and minimalistic design that focuses on your products, ensuring an optimal shopping experience. Kiosko is fully responsive, meaning it looks great on all devices, from desktops to smartphones. The theme is highly customizable, allowing you to change colors, layouts, and more to match your brand identity. With its deep integration with ecommerce, Kiosko supports all the essential e-commerce features like product galleries, reviews, and shopping carts. Additionally, it is optimized for speed and SEO, helping your store perform well in search engine rankings.",
+    "price": "R 2,999",
+    "category": "E-commerce",
+    "overviewLink": "/template.html?template=kiosko",
+    "liveDemo": "https://kioskodemo.wpcomstaging.com/",
+    "features": [
+        "Ecommerce Integration: Seamlessly integrates with plugins for a complete e-commerce solution.",
+        "Responsive Design: Ensures your store looks great on all devices.",
+        "Customizable Layouts: Offers various layout options to suit your brand.",
+        "Product Galleries: Supports product images with zoom and lightbox features.",
+        "SEO Optimized: Built with best practices for search engine optimization.",
+        "Accessibility Ready: Designed to be accessible for all users.",
+        "Regular Updates: Continuously updated to ensure compatibility with the latest ecommerce versions."
+    ],
+    "images": [
+      "img/templates/kiosko1.png",
+      "img/templates/kiosko2.png",
+      "img/templates/kiosko3.png",
+      "img/templates/kiosko4.png"
+    ]
+  },
+  "confectionary": {
+    "title": "Confectionary",
+    "description": "Confectionary is one of our essential E-commerce themes, designed to provide a seamless integration with the E-commerce plugin. It offers a clean and minimalistic design that focuses on your products, ensuring an optimal shopping experience. Confectionary is fully responsive, meaning it looks great on all devices, from desktops to smartphones. The theme is highly customizable, allowing you to change colors, layouts, and more to match your brand identity. With its deep integration with E-commerce, Confectionary supports all the essential e-commerce features like product galleries, reviews, and shopping carts. Additionally, it is optimized for speed and SEO, helping your store perform well in search engine rankings.",
+    "price": "R 2,999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=confectionary",
+    "liveDemo": "https://woocommerce.com/confectionary/",
+    "features": [
+        "E-commerce Integration: Seamlessly integrates with E-commerce for a complete e-commerce solution.",
+        "Responsive Design: Ensures your store looks great on all devices.",
+        "Customizable Layouts: Offers various layout options to suit your brand.",
+        "Product Galleries: Supports product images with zoom and lightbox features.",
+        "SEO Optimized: Built with best practices for search engine optimization.",
+        "Accessibility Ready: Designed to be accessible for all users.",
+        "Regular Updates: Continuously updated to ensure compatibility with the latest E-commerce versions."
+    ],
+    "images": [
+      "img/templates/htbi1.png",
+      "img/templates/htbi2.png",
+      "img/templates/htbi3.png",
+      "img/templates/htbi4.png"
+    ]
+  },
+  "organic": {
+    "title": "Organic",
+    "description": "Organic is a versatile and modern e-commerce theme designed to provide a seamless shopping experience. It features a clean and responsive design that looks great on all devices, from desktops to smartphones. Organic is highly customizable, allowing you to tailor the look and feel of your store to match your brand identity. The theme includes advanced e-commerce features such as product galleries, quick view options, and AJAX search functionality. Organic is also optimized for speed and SEO, ensuring your store loads quickly and ranks well in search engines. With multiple pre-built demos and easy integration with popular plugins, Organic is the perfect choice for anyone looking to build a professional online store.",
+    "price": "R 2,999",
+    "category": "Universal",
+    "overviewLink": "/template.html?template=organic",
+    "liveDemo": "https://websitedemos.net/organic-shop-02/",
+    "features": [
+        "Fully Responsive Design: Ensures your store looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "SEO-Friendly: Built with clean code and optimized structure to help your store rank higher in search engines.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Product Gallery Options: Supports zoom, lightbox, and slider features for product images.",
+        "Social Media Integration: Easily connect your store to your social media profiles.",
+        "Product Badges: Highlight sale items, new arrivals, or featured products with customizable badges.",
+        "Custom Widgets: Adds functionality and style to your store with customizable widgets.",
+        "Regular Updates: Stay up-to-date with the latest features and security enhancements."
+    ],
+    "images": [
+      "img/templates/organic1.png",
+      "img/templates/organic2.png",
+      "img/templates/organic3.png",
+      "img/templates/organic4.png"
+    ]
+  },
+  "earthy": {
+    "title": "Earthy",
+    "description": "Earthy is a nature-inspired e-commerce theme designed for organic and eco-friendly products. It features a warm color palette, organic shapes, and a clean layout that highlights your products beautifully. Earthy is fully responsive, ensuring a seamless shopping experience on all devices. The theme is highly customizable, allowing you to adjust colors, fonts, and layouts to match your brand identity. With its focus on sustainability, Earthy includes features like product ratings, eco-friendly badges, and a blog section for sharing your brand's story. Additionally, it is optimized for speed and SEO, helping your store perform well in search engine rankings.",
+    "price": "R 2,999",
+    "category": "Nature",
+    "overviewLink": "/template.html?template=earthy",
+    "liveDemo": "https://websitedemos.net/earth-02/",
+    "features": [
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Responsive Design: Ensures your store looks great on all devices.",
+        "Customizable Layouts: Offers various layout options to suit your brand.",
+        "Product Galleries: Supports product images with zoom and lightbox features.",
+        "SEO Optimized: Built with best practices for search engine optimization.",
+        "Accessibility Ready: Designed to be accessible for all users.",
+        "Regular Updates: Continuously updated to ensure compatibility with the latest WooCommerce versions."
+    ],
+    "images": [
+      "img/templates/earth1.png",
+      "img/templates/earth2.png",
+      "img/templates/earth3.png",
+      "img/templates/earth4.png"
+    ]
+  },
+  "author": {
+    "title": "Author",
+    "description": "Author is a beautifully crafted e-commerce theme designed for writers and bloggers. It features a clean and elegant design that showcases your content in the best light. Author is fully responsive, ensuring a seamless reading experience on all devices. The theme is highly customizable, allowing you to adjust colors, fonts, and layouts to match your brand identity. With its focus on storytelling, Author includes features like post galleries, author profiles, and a blog section for sharing your insights. Additionally, it is optimized for speed and SEO, helping your site perform well in search engine rankings.",
+    "price": "R 2,999",
+    "category": "Bookstore",
+    "overviewLink": "/template.html?template=author",
+    "liveDemo": "https://websitedemos.net/book-store-02/",
+    "features": [
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Responsive Design: Ensures your store looks great on all devices.",
+        "Customizable Layouts: Offers various layout options to suit your brand.",
+        "Product Galleries: Supports product images with zoom and lightbox features.",
+        "SEO Optimized: Built with best practices for search engine optimization.",
+        "Accessibility Ready: Designed to be accessible for all users.",
+        "Regular Updates: Continuously updated to ensure compatibility with the latest WooCommerce versions."
+    ],
+    "images": [
+      "img/templates/author1.png",
+      "img/templates/author2.png",
+      "img/templates/author3.png",
+      "img/templates/author4.png"
+    ]
+  },
+  "barista": {
+    "title": "Barista",
+    "description": "Barista is a modern and elegant e-commerce theme designed specifically for coffee lovers. It features a clean and responsive design that looks great on all devices, from desktops to smartphones. Barista is highly customizable, allowing you to tailor the look and feel of your store to match your brand identity. The theme includes advanced e-commerce features such as product galleries, quick view options, and AJAX search functionality. Barista is also optimized for speed and SEO, ensuring your store loads quickly and ranks well in search engines. With multiple pre-built demos and easy integration with popular plugins, Barista is the perfect choice for anyone looking to build a professional online coffee shop.",
+    "price": "R 2,999",
+    "category": "Coffee",
+    "overviewLink": "/template.html?template=barista",
+    "liveDemo": "https://websitedemos.net/coffee-house-02/",
+    "features": [
+        "Fully Responsive Design: Ensures your store looks flawless on all devices, including desktops, tablets, and mobile phones.",
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "SEO-Friendly: Built with clean code and optimized structure to help your store rank higher in search engines.",
+        "Customizable Header and Footer: Easily design unique headers and footers to match your brand.",
+        "Product Gallery Options: Supports zoom, lightbox, and slider features for product images.",
+        "Social Media Integration: Easily connect your store to your social media profiles.",
+        "Product Badges: Highlight sale items, new arrivals, or featured products with customizable badges.",
+        "Custom Widgets: Adds functionality and style to your store with customizable widgets.",
+        "Regular Updates: Stay up-to-date with the latest features and security enhancements."
+    ],
+    "images": [
+      "img/templates/barista1.png",
+      "img/templates/barista2.png",
+      "img/templates/barista3.png",
+      "img/templates/barista4.png"
+    ]
+  },
+  "steak-house": {
+    "title": "Steak House",
+    "description": "Steak House is a premium e-commerce theme designed for meat and steak lovers. It features a bold and modern design that showcases your products beautifully. Steak House is fully responsive, ensuring a seamless shopping experience on all devices. The theme is highly customizable, allowing you to adjust colors, fonts, and layouts to match your brand identity. With its focus on quality, Steak House includes features like product galleries, customer reviews, and a blog section for sharing recipes and cooking tips. Additionally, it is optimized for speed and SEO, helping your store perform well in search engine rankings.",
+    "price": "R 2,999",
+    "category": "Restaurant",
+    "overviewLink": "/template.html?template=steak-house",
+    "liveDemo": "https://websitedemos.net/steak-house-02/",
+    "features": [
+        "High Performance: Optimized for fast loading speeds to improve user experience and SEO rankings.",
+        "Responsive Design: Ensures your store looks great on all devices.",
+        "Customizable Layouts: Offers various layout options to suit your brand.",
+        "Product Galleries: Supports product images with zoom and lightbox features.",
+        "SEO Optimized: Built with best practices for search engine optimization.",
+        "Accessibility Ready: Designed to be accessible for all users.",
+        "Regular Updates: Continuously updated to ensure compatibility with the latest WooCommerce versions."
+    ],
+    "images": [
+      "img/templates/steak1.png",
+      "img/templates/steak2.png",
+      "img/templates/steak3.png",
+      "img/templates/steak4.png"
+    ]
+  }
+}
